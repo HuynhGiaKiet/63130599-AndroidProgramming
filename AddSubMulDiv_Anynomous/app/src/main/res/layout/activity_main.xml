@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Số thứ nhất"
+            android:text="a= "
             android:textColor="#02608A"
             android:textSize="18dp" />
 
@@ -25,7 +25,7 @@
             android:id="@+id/edtSO1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mời nhập một con số ở đây"
+            android:hint=""
             />
     </LinearLayout>
 
@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Số thứ hai"
+            android:text="b= "
             android:textColor="#02608A"
             android:textSize="18dp" />
 
@@ -47,7 +47,7 @@
             android:id="@+id/edtSO2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mời nhập một con số ở đây"
+            android:hint=""
             />
 
     </LinearLayout>
@@ -109,7 +109,7 @@
             android:id="@+id/edtKQ"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nơi hiển thị kết quả"
+            android:hint=""
             android:enabled="false"
             />
     </LinearLayout>

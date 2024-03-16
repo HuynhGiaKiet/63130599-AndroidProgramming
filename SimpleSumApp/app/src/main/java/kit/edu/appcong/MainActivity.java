@@ -40,6 +40,6 @@ public class MainActivity extends AppCompatActivity {
         int Tong = so_A + so_B;
         String strTong = String.valueOf(Tong); //Chuyển sang dạng chuỗi
         //Hiện ra màn hình(Lấy dữ liệu hiện ra màn hình)
-        editTextKetQua.setText(strTong);3
+        editTextKetQua.setText(strTong);
     }
 }

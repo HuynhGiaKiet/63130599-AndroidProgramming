@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         nutChia = (Button) findViewById(R.id.btnChia);
 
     }
-    public 5void XuLyCong(View view){
+    public void XuLyCong(View view){
         //code xử lý
         //b1: lấy dữ liệu vào
         //b1.2: tìm editext số 1 và số 2
