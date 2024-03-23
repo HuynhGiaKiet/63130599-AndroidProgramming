@@ -30,6 +30,7 @@ public class ManHinhBMI extends JFrame {
 
 	public ManHinhBMI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("App Tính Chỉ Số BMI");
 		setBounds(100, 100, 683, 798);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -51,7 +52,7 @@ public class ManHinhBMI extends JFrame {
 		panel.add(label);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBounds(-19, 103, 704, 330);
+		panel_1.setBounds(-19, 103, 688, 330);
 		panel_1.setBackground(new Color(235, 220, 84));
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
@@ -125,9 +126,8 @@ public class ManHinhBMI extends JFrame {
 		btnExit.setBounds(488, 261, 124, 48);
 		panel_1.add(btnExit);
 		
-		JLabel status = new JLabel("");
-		status.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
-		status.setBounds(514, 175, 98, 41);
+		Label status = new Label("");
+		status.setBounds(473, 175, 139, 41);
 		panel_1.add(status);
 		
 		JLabel lblNewLabel_1 = new JLabel("");
@@ -138,8 +138,12 @@ public class ManHinhBMI extends JFrame {
 	}
 	void HamXuLyBMI()
 	{
-		double h = Double.parseDouble(textField.getText());
-		double w = Double.parseDouble(textField_1.getText());
+		String height = textField.getText(); 
+		String weight = textField_1.getText();
+		//Chuyển kiểu dữ liệu 
+		double h = Double.parseDouble(height);
+		double w = Double.parseDouble(weight);
+
 		//Tính bmi
 		double bmi = w / (h * h);
 		//định dạng kết quả vào Cal ở dạng chuỗi
