@@ -55,10 +55,11 @@ public class AdapterSinhVien extends ArrayAdapter<SinhVien> {
         {
             img.setImageResource(R.drawable.male);
         }
-        else{
+        else
+        {
             img.setImageResource(R.drawable.female);
         }
-        profile.setText(sinhVien.getID() +"  -  "+sinhVien.getName());
+        profile.setText(sinhVien.getID() +"  -  "+sinhVien.getName() +"  -  "+sinhVien.getLop());
         //Khi nhấn checkbox sẽ lưu vị trí sangarray vitri bên class main
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

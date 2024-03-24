@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnXoa,btnThem;
     EditText txt_Maso,txt_Ten,txt_Lop;
     RadioButton btnNam, btnNu;
-    boolean gioiTinh = true;
+    boolean gioiTinh=true ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,9 +57,8 @@ public class MainActivity extends AppCompatActivity {
         lv_HienThiDS = findViewById(R.id.dsHienThi);
         dsSinhVien.add(new SinhVien("NV1","Gia Kiệt","63CNTT2",true));
         dsSinhVien.add(new SinhVien("NV2","Gia Huy","63CNTT2",true));
-        dsSinhVien.add(new SinhVien("NV3","Gia Long","63CNTT2",true));
-        dsSinhVien.add(new SinhVien("NV4","Gia Bảo","63CNTT2",true));
-        dsSinhVien.add(new SinhVien("NV5","Gia Hân","63CNTT2",false));
+        dsSinhVien.add(new SinhVien("NV3","Gia Hân","63CNTT2",false));
+        dsSinhVien.add(new SinhVien("NV4","Gia Hương","63CNTT3",false));
         adapterSinhVien = new AdapterSinhVien(MainActivity.this,R.layout.item_view,dsSinhVien);
         lv_HienThiDS.setAdapter(adapterSinhVien);
     }
@@ -81,19 +81,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        if (btnNam.isChecked()){
+        if (btnNam.isChecked())
+        {
             gioiTinh = true;
-        }else{
-            gioiTinh = false ;
+        }else
+        {
+            gioiTinh = false;
         }
+
+
         //Sự kiện thêm
         btnThem.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
+
                 dsSinhVien.add(new SinhVien(txt_Maso.getText().toString(),txt_Ten.getText().toString(),txt_Lop.getText().toString(),gioiTinh));
             }
+
         });
+
     }
-
-
 }
