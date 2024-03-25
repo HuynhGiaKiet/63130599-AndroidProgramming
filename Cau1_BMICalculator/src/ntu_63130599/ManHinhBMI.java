@@ -133,6 +133,7 @@ public class ManHinhBMI extends JFrame {
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setBounds(-9, 301, 678, 460);
 		contentPane.add(lblNewLabel_1);
+		//Them anh vao JLable
 		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Dell G15\\Desktop\\Screenshot 2024-03-23 210115 copy.png"));
 		
 	}
@@ -204,13 +205,10 @@ public class ManHinhBMI extends JFrame {
 		textField.setText("");
 		textField_1.setText("");
 		textField_2.setText("");
-		//textField_2.setOpaque(true);
-		//textField_2.setBackground(null);
+		textField_2.setOpaque(true);
+		textField_2.setBackground(null);
+		status.setText("");
 
 	}
-	
-	void HamXuLyThoat()
-	{
-		System.exit(0);
-	}
+
 }
