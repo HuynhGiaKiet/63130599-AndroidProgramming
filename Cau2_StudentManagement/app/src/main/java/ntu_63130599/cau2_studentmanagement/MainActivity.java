@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         dsSinhVien.add(new SinhVien("NV2","Gia Huy","63CNTT2",true));
         dsSinhVien.add(new SinhVien("NV3","Gia Hân","63CNTT2",false));
         dsSinhVien.add(new SinhVien("NV4","Gia Hương","63CNTT3",false));
+        dsSinhVien.add(new SinhVien("NV5","Gia Hào","63CNTT3",true));
         adapterSinhVien = new AdapterSinhVien(MainActivity.this,R.layout.item_view,dsSinhVien);
         lv_HienThiDS.setAdapter(adapterSinhVien);
     }
