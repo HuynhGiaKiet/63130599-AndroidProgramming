@@ -210,5 +210,9 @@ public class ManHinhBMI extends JFrame {
 		status.setText("");
 
 	}
-
+	
+	void HamXuLyThoat()
+	{
+		System.exit(0);
+	}
 }
