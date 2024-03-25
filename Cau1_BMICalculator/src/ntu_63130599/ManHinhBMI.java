@@ -160,6 +160,7 @@ public class ManHinhBMI extends JFrame {
 		//Xét nhiều trường hợp
 				if(bmi <= 18.5)
 				{
+					
 					textField_2.setOpaque(true);
 					//Set Background
 					textField_2.setBackground(Color.blue);
@@ -167,6 +168,7 @@ public class ManHinhBMI extends JFrame {
 					status.setForeground(Color.blue);
 					//In ra cảnh báo tình trạng
 					status.setText("UnderWeight");
+					
 				}
 				if(bmi <= 24.9)
 				{
