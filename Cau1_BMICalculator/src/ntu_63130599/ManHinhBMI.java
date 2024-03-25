@@ -199,15 +199,7 @@ public class ManHinhBMI extends JFrame {
 		}
 	}
 	
-	void HamXuLyXoa()
-	{
-		textField.setText("");
-		textField_1.setText("");
-		textField_2.setText("");
-		textField_2.setOpaque(true);
-		textField_2.setBackground(null);
-		status.setText("");
-	}
+
 	
 	void HamXuLyThoat()
 	{
