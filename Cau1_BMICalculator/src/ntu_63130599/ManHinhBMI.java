@@ -17,6 +17,7 @@ import javax.swing.JButton;
 import javax.swing.ImageIcon;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.UIManager;
 
 public class ManHinhBMI extends JFrame {
 
@@ -94,35 +95,39 @@ public class ManHinhBMI extends JFrame {
 		panel_1.add(textField_2);
 		
 		JButton btnCalculate = new JButton("Calculate");
+		btnCalculate.setForeground(new Color(0, 0, 0));
+		btnCalculate.setBackground(new Color(128, 255, 255));
 		btnCalculate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//Code xử lý tính BMI
 				HamXuLyBMI();
 			}
 		});
-		btnCalculate.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
+		btnCalculate.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 20));
 		btnCalculate.setBounds(123, 261, 124, 48);
 		panel_1.add(btnCalculate);
 		
 		JButton btnClear = new JButton("Clear");
+		btnClear.setBackground(new Color(128, 255, 255));
 		btnClear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//Code xử lý Xóa
 				HamXuLyXoa();
 			}
 		});
-		btnClear.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
+		btnClear.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 20));
 		btnClear.setBounds(310, 261, 124, 48);
 		panel_1.add(btnClear);
 		
 		JButton btnExit = new JButton("Exit");
+		btnExit.setBackground(new Color(128, 255, 255));
 		btnExit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//Code Thoát
 				HamXuLyThoat();
 			}
 		});
-		btnExit.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 15));
+		btnExit.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 20));
 		btnExit.setBounds(488, 261, 124, 48);
 		panel_1.add(btnExit);
 		
