@@ -94,7 +94,10 @@
             android:layout_height="wrap_content">
             <include layout="@layout/item_add"/>
             <include layout="@layout/item_info"/>
-            <include layout="@layout/item_email"/>
+
+            <include
+                layout="@layout/item_email"
+                android:layout_height="202dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

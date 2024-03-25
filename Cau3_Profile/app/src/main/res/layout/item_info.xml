@@ -27,10 +27,10 @@
             <TextView
                 android:text="Mobile"
                 android:layout_marginStart="10dp"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"
-                android:textColor="#605E5E"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
