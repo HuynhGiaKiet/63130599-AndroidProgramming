@@ -9,6 +9,7 @@
     android:background="#8BFFEB3B"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
@@ -176,21 +177,22 @@
             android:text="Xóa" />
 
     </LinearLayout>
-
-    <ListView
-        android:id="@+id/dsHienThi"
-        android:layout_width="match_parent"
-        android:layout_height="425dp" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="33dp"
         android:gravity="center"
-        android:text="Copyright © Huỳnh Gia Kiệt"
+        android:text="Danh Sách Sinh Viên"
         android:textSize="20dp"
         android:textStyle="bold"
         android:background="#FD8864"/>
+    <ListView
+        android:id="@+id/dsHienThi"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"></ListView>
+
+
+
 
 
 </LinearLayout>
