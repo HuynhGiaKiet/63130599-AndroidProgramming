@@ -152,6 +152,9 @@
 
         <Button
             android:id="@+id/btnXoa"
+            android:background="#0BF132"
+            android:textSize="18dp"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
