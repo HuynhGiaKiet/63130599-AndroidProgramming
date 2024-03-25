@@ -152,7 +152,57 @@ public class ManHinhBMI extends JFrame {
 		//In ra kết quả từ cal
 		textField_2.setText(Cal);
 		
-		
+		//Xét nhiều trường hợp
+				if(bmi <= 18.5)
+				{
+					textField_2.setOpaque(true);
+					//Set Background
+					textField_2.setBackground(Color.blue);
+					//setting cho nền của tình trạng có màu
+					status.setForeground(Color.blue);
+					//In ra cảnh báo tình trạng
+					status.setText("UnderWeight");
+				}
+				if(bmi <= 24.9)
+				{
+					textField_2.setOpaque(true);
+					//Set Background
+					textField_2.setBackground(Color.green);
+					//setting cho nền của tình trạng có màu
+					status.setForeground(Color.green);
+					//In ra cảnh báo tình trạng
+					status.setText("Normal Weight");
+				}
+				if(bmi <= 29.9)
+				{
+					textField_2.setOpaque(true);
+					//Set Background
+					textField_2.setBackground(Color.yellow);
+					//setting cho nền của tình trạng có màu
+					status.setForeground(Color.yellow);
+					//In ra cảnh báo tình trạng
+					status.setText("OverWeight");
+				}
+				if(bmi <= 34.9)
+				{
+					textField_2.setOpaque(true);
+					//Set Background
+					textField_2.setBackground(Color.orange);
+					//setting cho nền của tình trạng có màu
+					status.setForeground(Color.orange);
+					//In ra cảnh báo tình trạng
+					status.setText("Obese");
+				}
+				if(bmi >= 35)
+				{
+					textField_2.setOpaque(true);
+					//Set Background
+					textField_2.setBackground(Color.red);
+					//setting cho nền của tình trạng có màu
+					status.setForeground(Color.red);
+					//In ra cảnh báo tình trạng
+					status.setText("Extremely Obese");
+				}
 	}
 	
 	void HamXuLyXoa()
