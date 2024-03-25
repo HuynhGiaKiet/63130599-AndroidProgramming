@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
 
-    android:background="@drawable/background"
+    android:background="@drawable/background1"
     tools:context=".MainActivity">
     <LinearLayout
         android:orientation="vertical"
