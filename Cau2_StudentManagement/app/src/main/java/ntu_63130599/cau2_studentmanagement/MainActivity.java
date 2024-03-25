@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnXoa,btnThem;
     EditText txt_Maso,txt_Ten,txt_Lop;
     RadioButton btnNam, btnNu;
-    boolean gioiTinh=true ;
+    boolean gioiTinh = true ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,12 +81,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
+        boolean gioiTinh;
         if (btnNam.isChecked())
         {
             gioiTinh = true;
-        }else
-        {
+        }else {
             gioiTinh = false;
         }
 
